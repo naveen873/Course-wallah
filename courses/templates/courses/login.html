@@ -1,0 +1,31 @@
+
+{% extends 'courses/base.html' %}
+{% load course_custom_tags %}
+{% block title %}
+  Login
+{% endblock %}
+
+{% block content %}
+
+<div class="">
+  <div class="container-fluid mx-auto p-2 mt-5 border border-black p-4 mb-4 "  style="width: 250px;">
+    <h1 class="display-5 ">Login Page</h1>
+     <hr>
+ 
+     <div class="">
+       <form method="post" action="/login">
+         {% csrf_token %}
+         {{form.as_p}}
+         <input class="btn btn-primary btn-sm" type="submit"  value="Login">
+       </form>
+       
+ 
+       
+     </div>
+ </div>
+ 
+</div>
+
+
+
+{% endblock %}

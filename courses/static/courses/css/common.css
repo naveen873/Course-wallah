@@ -1,0 +1,37 @@
+.price{
+    font-size: 20px;
+}
+
+.overflow-y-scroll{
+ overflow-y: scroll;
+}
+.display-5{
+    font-size: 35px;
+    
+}
+.display-6{
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+
+.active-video{
+    background-color:black ;
+    color: white;
+  }
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to right,#C33764,#1D2671);
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
+  }
+
+.nav{
+   
+    background-color: aqua;
+
+  }

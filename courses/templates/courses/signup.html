@@ -1,0 +1,25 @@
+
+{% extends 'courses/base.html' %}
+{% load course_custom_tags %}
+{% block title %}
+ Sign Up
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid mx-auto p-2 mt-5 border border-black p-4 mb-4 "  style="width: 650px;">
+   <p class="display-5" style="text-align: center;"><b>Create Account</b></p>
+   <hr>
+
+   <div>
+    <form action="/signup" method="POST">
+        {% csrf_token %}
+        {{form.as_ul}}
+
+        <input class="btn-primary btn-sm"type="submit" value="Register">
+    </form>
+   </div>
+
+</div>
+
+{% endblock %}
